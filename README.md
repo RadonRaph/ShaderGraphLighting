@@ -19,6 +19,7 @@ CustomPBR features are :
 - Global Illumination.
 
 ![Exemple of customPBR use](https://i.imgur.com/kUUHSJw.jpeg)
+(Left CustomPBR | Right Unity Lit shader)
 
 Known Issues :
 - Reflection probe not working correctly
