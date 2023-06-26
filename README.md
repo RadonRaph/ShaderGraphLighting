@@ -18,6 +18,8 @@ CustomPBR features are :
 - A fake point light.
 - Global Illumination.
 
+Be careful when using the CustomPBR shader for each map there is 3 options : UseTexture, Texture and Value if UseTexture is false the value drives directly, if UseTexture is true the value is a *multiplier* of the texture. 
+
 ![Exemple of customPBR use](https://i.imgur.com/kUUHSJw.jpeg)
 (Left CustomPBR | Right Unity Lit shader)
 
