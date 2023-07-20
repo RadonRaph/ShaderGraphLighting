@@ -36,15 +36,19 @@ You can use CustomPBR as a starting point and remove or add subgraphes depanding
 
 /!\ Lightmap advices :
 The CustomPBR shader as 2 options for lightmaps, use the BakedGI node that automatically gets the lightmaps and the coordinate for your object from the scene or use the custom lightmap option.
+
 This options allow you to use lightmap baked in another scene in any scene but since it cannot get the lightmap data automatically you need to give it yourself.
 So you need to specify wich lightmap texture and direction to use and the offset.
+
 For the offset you can retrieve it from the scene (Could be useful if you want multiple lightmap for one scene) or you can provide it manually. 
 Those informations can be found on your mesh renderer when light is baked :
+
 ![Lightmap offset illustration](https://i.imgur.com/Y4vWHOa.png)
-Tilling X -> LightmapOffset.X
-Tilling Y -> LightmapOffset.Y
-Offset X -> LightmapOffset.Z
-Offset Y -> LightmapOffset.W 
+
+- Tilling X -> LightmapOffset.X
+- Tilling Y -> LightmapOffset.Y
+- Offset X -> LightmapOffset.Z
+- Offset Y -> LightmapOffset.W 
 
 We made a custom script called LightmapParameter to help you, place it on your gameobject, bake you light and make or save a prefab of your object, then you can use it anywhere with baked lightmap !
 
