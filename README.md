@@ -26,7 +26,7 @@ Be careful when using the CustomPBR shader for each map there is 3 options : Use
 
 # Known Issues :
 - Reflection probe not working correctly
-- High metalness & smothness looks a bit off compared to Unity's lit.
+- High metalness & smoothness looks a bit off compared to Unity's lit.
 - Lightmap are too bright : Fixed in V1.1
 - Only MainLight shadows 
 
